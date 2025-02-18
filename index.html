@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIALLO OUMAR RAMADANE - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <nav class="navbar">
+    <div class="logo">OUMAR</div>
+    <ul class="nav-links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#a-propos">À propos</a></li>
+      <li><a href="#experience">Expériences</a></li>
+      <li><a href="#formation">Formation</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#extra">Activités</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Section Accueil / Hero -->
+  <header id="accueil" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>DIALLO OUMAR RAMADANE</h1>
+      <p>Ingénieur Logiciel & Développeur Front-End</p>
+      <a href="#contact" class="btn">Contactez-moi</a>
+    </div>
+  </header>
+
+  <!-- Section À propos -->
+  <section id="a-propos" class="about section">
+    <div class="container">
+      <h2>À propos de moi</h2>
+      <p>
+        Passionné par l'analyse et la gestion des données ainsi que par l'intelligence artificielle, je souhaite intégrer un programme en France afin de développer des compétences avancées dans la conception de bases de données, le traitement des données massives (Big Data) et l'application de l'IA pour résoudre des problématiques complexes. Mon objectif est de contribuer à des projets innovants combinant optimisation des systèmes d'information et technologies intelligentes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section Expériences Professionnelles -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2>Expériences Professionnelles</h2>
+      <div class="experience-item card">
+        <h3>Stage d'initiation – Institut d'enseignement international, MIREA</h3>
+        <span class="date">2024</span>
+        <p>
+          Observation et compréhension des processus d'affaires dans les systèmes informatiques. Étude des méthodes modernes de gestion et de diagnostic des projets d'information.
+        </p>
+      </div>
+      <div class="experience-item card">
+        <h3>Projet technologique (Stage) – MIREA - Université Technologique Russe</h3>
+        <span class="date">2024</span>
+        <p>
+          Participation à la conception et au développement de systèmes embarqués. Test et vérification des outils numériques pour des applications industrielles.
+        </p>
+      </div>
+      <div class="experience-item card">
+        <h3>Assistant en développement informatique – Freelance (Conakry, Guinée)</h3>
+        <span class="date">2021 - 2022</span>
+        <p>
+          Développement de logiciels sur mesure pour les entreprises locales. Maintenance et optimisation de bases de données existantes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Formation -->
+  <section id="formation" class="formation section">
+    <div class="container">
+      <h2>Formation</h2>
+      <div class="formation-item card">
+        <h3>Master en Informatique et Matériel Informatique</h3>
+        <span class="date">Université de Labé (Guinée) – 2018 - 2021</span>
+        <p>
+          Diplôme obtenu avec mention. Mémoire : « Conception et optimisation de logiciel de recensement de la population guinéenne ».
+        </p>
+      </div>
+      <div class="formation-item card">
+        <h3>Licence en Informatique</h3>
+        <span class="date">Université de Labé (Guinée)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="competences" class="skills section">
+    <div class="container">
+      <h2>Compétences</h2>
+      <div class="skills-container">
+        <div class="skill card">
+          <h3>Langages de Programmation</h3>
+          <p>Python, Java, C/C++, JavaScript, PHP</p>
+        </div>
+        <div class="skill card">
+          <h3>Systèmes Intelligents et IA</h3>
+          <p>Machine Learning, Outils d'analyse prédictive</p>
+        </div>
+        <div class="skill card">
+          <h3>Gestion de Projet</h3>
+          <p>Méthodologie Agile, JIRA, Outils de planification</p>
+        </div>
+        <div class="skill card">
+          <h3>Langues</h3>
+          <p>Français (avancé), Anglais (intermédiaire), Russe (intermédiaire)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Activités Extra-Académiques -->
+  <section id="extra" class="extra section">
+    <div class="container">
+      <h2>Activités Extra-Académiques</h2>
+      <ul>
+        <li>Participation à des hackathons technologiques à Moscou</li>
+        <li>Membre du club de robotique et IA, MIREA</li>
+        <li>Enseignement bénévole en programmation informatique pour les jeunes en Guinée</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:oumarsatina@gmail.com">oumarsatina@gmail.com</a></p>
+      <p>Téléphone : <a href="tel:+79017813058">+7 9017813058</a></p>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 DIALLO OUMAR RAMADANE. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript pour le menu hamburger (mobile) et les animations au scroll -->
+  <script>
+    // Menu hamburger
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Intersection Observer pour révéler les sections au défilement
+    const sections = document.querySelectorAll('.section');
+    const options = {
+      threshold: 0.2
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
